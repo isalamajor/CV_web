@@ -1,0 +1,148 @@
+
+:root {
+    --blanco: #ffffff;
+    --amarillo: #ffec00;
+    --azul: #009988; 
+    --grisclaro: #DFE9F3;
+    --gris: #C5D3E0;
+    --negro: black;
+    --rosa:  #f17ce1  ;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+
+body {
+    font-size: 16px; /* 1rem = 10px*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--grisclaro) 20%, var(--grisclaro) 30%, var(--blanco) 50%);
+
+
+}
+
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--rosa);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 370;
+    font-style: normal;
+}
+
+
+.intro1{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.nav-bg {
+    background-color: var(--azul);
+}
+
+
+.contenedor {
+    max-width: 120pix;
+    /*margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0*/
+    margin: 0 auto 0 auto; /*margin: 0 auto*/
+}
+
+.navegacion1 {
+    background-color: #009988; /* se puede quitar??*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navegacion1 a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 1rem;
+    
+}
+
+.navegacion1 a:hover{
+    background-color: var(--amarillo);
+    color: black;
+
+}
+
+.section1 {
+    background-image: url(../img/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    
+    color: var(--blanco);
+    font-size: 2.5rem;
+    text-align: center;
+    position:relative;
+}
+
+.icono {
+    width: 30rem;
+    height: 30rem;
+}
+
+.idiomas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7rem;
+    row-gap: 2rem;
+    font-size: 130%;
+    margin: 3rem auto;
+    height: min-content;
+    
+}
+
+.idioma {
+    padding: 2rem;
+}
+.idioma:hover{
+    background-color: var(--gris);
+}
+
+@media(min-width: 768px){
+    .navegacion1{
+        flex-direction: row;
+    }
+    .navegacion1 a {
+        text-align: left;
+    }
+    .idiomas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;  
+    }
+}
